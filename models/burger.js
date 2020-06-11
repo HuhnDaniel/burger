@@ -1,0 +1,16 @@
+const orm = require("../config/orm");
+const { updateOne } = require("../config/orm");
+
+var burger = {
+    selectAll: function() {
+        orm.selectAll();
+    },
+    insertOne: function() {
+        orm.insertOne();
+    },
+    updateOne: function() {
+        orm.updateOne();
+    }
+}
+
+module.exports = burger;
