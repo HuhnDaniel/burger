@@ -3,7 +3,7 @@ const exphbs = require(`express-handlebars`);
 const routes = require(`./controllers/burger_controller`);
 
 const app = express();
-const PORT = process.env.PORT || 8070;
+const PORT = process.env.PORT || 8080;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
