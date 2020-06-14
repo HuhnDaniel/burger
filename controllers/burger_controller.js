@@ -1,12 +1,18 @@
 const router = require(`express`).Router();
 const burger = require(`../models/burger`);
 
-router.get("/", (req, res) => {
+router.get(`/`, (req, res) => {
     let hbsObj;
     burger.selectAll(function(data) {
         hbsObj = { burgers: data };
         console.log(hbsObj);
-        res.render("index", hbsObj);
+        res.render(`index`, hbsObj);
+    });
+});
+
+router.post(`/api/burgers`, (req, res) => {
+    burger.insertOne(`burger_name`, req.body.burger_name, (result) => {
+        res.json({ id: result.insertID });
     });
 });
 
