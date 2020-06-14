@@ -10,7 +10,7 @@ const orm = {
     },
 
     insertOne: function (table, cols, vals, cb) {
-        const queryStr = `INSERT INTO ${table} (${cols.toString()}) VALUES (?) `;
+        const queryStr = `INSERT INTO ${table} (${cols.toString()}) VALUES (?)`;
 
         connection.query(queryStr, vals, (err, res) => {
             if (err) throw err;
