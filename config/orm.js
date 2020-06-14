@@ -17,7 +17,15 @@ const orm = {
             cb(res);
         });
     },
-    updateOne: function () { }
+
+    updateOne: function (table, objColVals, condition, cb) {
+        const queryStr = `UPDATE ${table} SET devoured = ${objColVals} WHERE ${condition}`;
+
+        connection.query(queryStr, (err, res) => {
+            if (err) throw err;
+            cb(res);
+        })
+    }
 }
 
 module.exports = orm;
