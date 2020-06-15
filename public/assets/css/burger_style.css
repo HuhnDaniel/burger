@@ -1,0 +1,44 @@
+html {
+    background: lightblue;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.not-eaten {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.eaten {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+ul {
+    padding: 0;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: whitesmoke;
+    height: 100%;
+    width: 50%;
+    border-style: groove;
+}
+
+li {
+    list-style-type: none;
+    margin: 1em;
+    text-align: center;
+}
+
+.submitBtn {
+    margin-top: 1em;
+}
