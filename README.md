@@ -13,6 +13,6 @@ npm i
 ## Author
 Daniel Moody-Huhn
 - https://github.com/HuhnDaniel/
-- https://huhndaniel.github.io/
+- https://danielmoodyhuhn.herokuapp.com/
 ## Questions   
-If you have any questions about the repo, please open an issue or contact ${data.gitHubUser} at ${data.gitHubEmail}.
+If you have any questions about the repo, please open an issue or contact me at my danielmoodyhuhn.herokuapp.com site.
